@@ -25,7 +25,7 @@ The <style> tag is used to provide style information to the HTML document. It co
 The <p> tag means a paragraph.
 Paragraphs are block level elements. (block level elements take up the full width available). 
 
-Meta Tags 
+6. Meta Tags 
 
 HTML <meta> Tag
 The <meta> tag defines metadata about an HTML document. Metadata is data (information) about data.
@@ -41,3 +41,12 @@ Example:
   <meta name="author" content="John Doe">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
+7. Header
+The <header> tag is used to represent introductory content of the page/document. Mostly, it contains navigation elements or some heading elements like a logo, page name etc.
+
+8. Nav
+The <nav> tag is used to define the navigation section of a page. It's purpose is to provide navigation links to the other parts of website or to any external website. The navigation sections usually contains a list or a nested list of navigation links for the website.
+
+
+
