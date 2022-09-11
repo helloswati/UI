@@ -4,3 +4,16 @@ It contains such as heading, paragraph, images, hyperlinks, tables, lists, etc.
 2. Div & Span - <div></div>  <span></span>
 Both defines part of a web pages. The <span> show the inline portion of a document. The <div> shows a block-level portion of a document.
 The <div> element is used whie creating CSS based layout in html, Whereas, <span> element is used to stylize texts. 
+
+3. Script - <script></script>
+The <script> tag is used to embed executable code in a HTML document. The executable code is usually JavaScript code, but the tag also supports JSON or  WebGL's GLSL shader programming language.
+The script tag has multiple attributes:
+src
+type
+async
+crossorigin
+defer
+integrity
+nomodule
+nonce
+referrerpolicy
