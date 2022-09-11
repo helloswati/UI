@@ -17,3 +17,10 @@ integrity
 nomodule
 nonce
 referrerpolicy
+
+4. Style - <style></style>
+The <style> tag is used to provide style information to the HTML document. It contains CSS code which is applied to the document based on the CSS code provided between the style opening and closing tag.
+
+5. P tag - <p></p> 
+The <p> tag means a paragraph.
+Paragraphs are block level elements. (block level elements take up the full width available). 
