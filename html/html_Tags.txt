@@ -1,0 +1,6 @@
+1. Body - <body></body> :
+It contains such as heading, paragraph, images, hyperlinks, tables, lists, etc.
+
+2. Div & Span - <div></div>  <span></span>
+Both defines part of a web pages. The <span> show the inline portion of a document. The <div> shows a block-level portion of a document.
+The <div> element is used whie creating CSS based layout in html, Whereas, <span> element is used to stylize texts. 
