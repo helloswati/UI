@@ -1,0 +1,84 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/home/swati/Documents/javascript/traveler_style.css">
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .img-container {
+          float: left;
+          width: 33.33%;
+          padding: 5px;
+        }
+        
+        .clearfix::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        </style>
+    
+</head>
+<body>
+    <h1> Traveler. </h1>
+    <ul>
+        <li>Destination</li>
+        <li>Travel</li>
+        <li>Pricing</li>
+        <li>Contact</li>
+      </ul>
+    <p>
+        Planing Trip To Anywhere in The World?
+    </p>
+    <div class="clearfix">
+        <div class="img-container">
+        <img src="/home/swati/Documents/javascript/Traveler/img_1.jpg" alt="Italy" style="width:100%">
+        </div>
+        <div class="img-container">
+        <img src="/home/swati/Documents/javascript/Traveler/img_forest.jpg" alt="Forest" style="width:100%">
+        </div>
+        <div class="img-container">
+        <img src="/home/swati/Documents/javascript/Traveler/img_mountains.jpg" alt="Mountains" style="width:100%">
+        </div>
+      </div>
+    <fieldset>
+        <legend>Book Your Trip</legend>
+    <div>
+        <form>
+            <label for="fullname">Your Name:</label><br>
+            <input type="text" name="fname"><br>
+            <label for="activities">Activities:</label><br>
+            <select>
+                <option value="">Activities</option>
+                <option value="">Hiking</option>
+                <option value="">Caving</option>
+                <option value="">Swimming</option>
+                <option value="">Trekking</option>
+
+               
+            </select><br>
+            <label for="Destination">Destination:</label><br>
+            <select>
+                <option value="">India</option>
+                <option value="">USA</option>
+                <option value="">UK</option>
+                <option value="">Philippines</option>
+                <option value="">Australia</option>
+                <option value="">Singapore</option>
+
+               
+            </select><br>
+            <label for="date">Travel Date:</label><br>
+			<input type="date" name="date"><br>
+            <button type="button" onclick="alert('Thank You')">Submit</button>
+          </form> 
+    </div>
+</fieldset>
+
+
+
+</body></html>
