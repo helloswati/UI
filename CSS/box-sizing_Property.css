@@ -1,0 +1,38 @@
+/*The box-sizing property defines how the width and height of an element are calculated: should they include padding and borders, or not.*/
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#example1 {
+  width: 300px;
+  padding: 40px;  
+  border: 15px solid blue;
+}
+
+#example2 {
+  width: 300px;
+  padding: 10px;  
+  border: 2px solid red;
+}
+</style>
+</head>
+<body>
+
+<h1>The Universal box-sizing</h1>
+
+<p>Since the result of using "box-sizing: border-box" is so much better, many developers want all elements on their pages to work this way.
+The first style in the head section above ensures that all elements are sized in this more intuitive way.
+The width you set is the width you get, without having to perform mental math and manage the complexity that comes from widths that come from multiple properties.
+Applying this to all elements is safe and wise:</p>
+
+<div id="example1">This div has a full width of 300px, no matter padding or border!</div>
+<br>
+<div id="example2">This div also has a full width of 300px, no matter padding or border!</div>
+
+</body>
+</html>
