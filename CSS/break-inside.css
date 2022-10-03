@@ -1,0 +1,12 @@
+/* The break-inside property specifies whether or not a page break, column break, or region break should occur inside the specified element.
+
+The break-inside property extends then CSS2 page-break-inside property.
+
+With break-inside, you can tell the browser to avoid breaks inside images, code snippets, tables, and listst.*/
+
+@media print {
+  img {
+    display: block;
+    break-inside: avoid;
+  }
+}
