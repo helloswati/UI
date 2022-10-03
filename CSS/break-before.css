@@ -1,0 +1,12 @@
+/* The break-before property specifies whether or not a page break, column break, or region break should occur before the specified element.
+
+The break-before property extends the CSS2 page-break-before property.
+
+Using break-before, you can tell the browser to break the page, column, or region before the element the break-before property is applied to, or avoid the element to be split and span across two pages.*/
+
+
+@media print {
+  h1 {
+    break-before: always;
+  }
+}
