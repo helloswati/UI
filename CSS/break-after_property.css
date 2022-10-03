@@ -1,0 +1,11 @@
+/* The break-after property specifies whether or not a page break, column break, or region break should occur after the specified element.
+
+The break-after property extends the CSS2 page-break-after property.
+
+Using break-after, you can tell the browser to break the page, column, or region after the element the break-after property is applied to, or avoid the element to be split and span across two page. */
+
+@media print {
+  footer {
+    break-after: always;
+  }
+}
