@@ -9,12 +9,25 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.rtl.min.css"
         integrity="sha384-OXTEbYDqaX2ZY/BOaZV/yFGChYHtrXH2nyXJ372n2Y8abBhrqacCEe+3qhSHtLjy" crossorigin="anonymous">
+    
+    <style >
+        body{
+            background-image: url("/home/swati/Documents/javascript/Traveler/traveler/images/img_bg_3.jpg");
+            height: 100vh;
+        }
+
+        .container-fluid{
+            background-color: url("/home/swati/Documents/javascript/Traveler/traveler/images/img_bg_3.jpg");
+        }
+             
+        
+    </style>
 
     <title>Traveler</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-light" >
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,16 +38,16 @@
                 <a class="navbar-brand table-active" href="#">Traveler.</a>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Destination</a>
+                        <a class="nav-link" aria-current="page" href="/home/swati/Documents/javascript/Traveler/Destination">Destination</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Travel</a>
+                        <a class="nav-link" href="file:///home/swati/Documents/javascript/Traveler/travel_page.html">Travel</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="file:///home/swati/Documents/javascript/Traveler/pricing_page.html">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="file:///home/swati/Documents/javascript/CustomForm.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -46,21 +59,26 @@
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
+                aria-current="true" aria-label="Slide 1" ></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="https://source.unsplash.com/random/1800x700/?beaches" class="d-block w-100" alt="Beaches">
             </div>
             <div class="carousel-item">
-                <img src="https://source.unsplash.com/random/1800x700/?sky" class="d-block w-100" alt="Sky">
+                <img src="https://source.unsplash.com/random/1800x700/?tourist " class="d-block w-100" alt="Sky">
             </div>
             <div class="carousel-item">
                 <img src="https://source.unsplash.com/random/1800x700/?mountains" class="d-block w-100" alt="Mountains">
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/random/1800x700/?roadtrip" class="d-block w-100" alt="Mountains">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -69,7 +87,7 @@
             <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
+            data-bs-slide="prev" >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
