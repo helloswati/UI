@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        #success {
+            font-size: 20px;
+            background: Yellow;
+            color: red;
+            padding: 1rem;
+            margin: auto
+        }
+
+        #success p {
+            font-size: 26px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Contact Form</h3>
+
+    <div class="container">
+        <form id="form1">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="tel">Contact Number</label>
+            <input type="tel" id="tel" name="tel" aria-placeholder="Your Contact Number" aria-required="false">
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Your message" style="height:200px" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+        <div id="success" style="display: none">
+            <p>Form Submitted Successfully!</p>
+            Hello Swati! You are not Sweta!
+        </div>
+    </div>
+
+</body>
+<script>
+    var form = document.querySelector("#form1")
+
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxmOuDVowJE67I3IqUxST0w5dQGOTlX-oX1HXAohNr1zFuzY6m2ZCiEGOixU1t3gPr8/exec'
+
+    form.addEventListener('submit', e => {
+        // Show Loader
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+            form.reset()
+            form.style.display = "none";
+            document.querySelector("#success").style.display = ""
+            // Hide Loader
+        })
+        .catch(error => {
+            // Hide Loader
+            alert('Error!', error.message)
+        })
+    })
+</script>
+
+</html>
