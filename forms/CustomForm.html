@@ -40,7 +40,7 @@
         }
 
         .register {
-           
+
             margin-top: 3%;
             padding: 3%;
             border-radius: 2.5rem;
@@ -72,7 +72,7 @@
             font-style: italic;
             font-family: 'Roboto'
 
-            
+
         }
 
         #success p {
@@ -81,7 +81,7 @@
 
         }
 
-        body{
+        body {
             background: url("/home/swati/Documents/javascript/Traveler/traveler/images/img_bg_3.jpg");
         }
     </style>
@@ -120,9 +120,11 @@
                 </div>
             </form>
             <div id="success" style="display: none" o>
-                <img src="/home/swati/Downloads/success-check.png" style="height: 80px";>
+                <img src="/home/swati/Downloads/success-check.png" style="height: 80px" ;>
 
                 <p>Your data has been Submitted Successfully!</p>
+                <a href="#home" id="back-btn">Submit Again</a>
+
             </div>
         </div>
     </div>
@@ -131,9 +133,9 @@
     </div>
 
     <script>
-        var form = document.querySelector("#form1")
-
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxmOuDVowJE67I3IqUxST0w5dQGOTlX-oX1HXAohNr1zFuzY6m2ZCiEGOixU1t3gPr8/exec'
+        const form = document.querySelector("#form1")
+        const backbtn = document.querySelector("#back-btn")
         form.addEventListener('submit', e => {
             e.preventDefault()
             // Loader
@@ -152,6 +154,12 @@
                     loader.style.display = "none";
                     alert("Something went wrong!")
                 })
+            form.style.display = "none"
+        })
+        backbtn.addEventListener("click", function () {
+            form.reset()
+            form.style.display = "";
+            document.querySelector("#success").style.display = "none"
         })
     </script>
 </body>
@@ -171,12 +179,12 @@
         left: 50%;
         top: 50%;
         z-index: 1;
-        width: 120px;
-        height: 120px;
+        width: 80px;
+        height: 80px;
         margin: -76px 0 0 -76px;
-        border: 8px solid #F3F3F3;
+        border: 4px solid #F3F3F3;
         border-radius: 50%;
-        border-top: 8px solid blue;
+        border-top: 4px solid blue;
         -webkit-animation: spin 1s linear infinite;
         animation: spin 1s linear infinite;
     }
