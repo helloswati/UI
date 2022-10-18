@@ -1,28 +1,23 @@
-/*The call() method takes arguments separately. 
-  The apply() method takes arguments as an array.*/
-
 <!DOCTYPE html>
 <html>
 <body>
 
 <h2>JavaScript Functions</h2>
-<p>In this example the fulllName method of person is <b>applied</b> on person1:</p>
+
+<p>This example creates an object with 3 properties (firstName, lastName, fullName).</p>
+<p>The fullName property is a method:</p> 
 
 <p id="demo"></p>
 
 <script>
-const person = {
-  fullName: function(city, country) {
-    return this.firstName + " " + this.lastName + "," + city + "," + country;
+const myObject = {
+  firstName:"John",
+  lastName: "Doe",
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
   }
 }
-
-const person1 = {
-  firstName:"John",
-  lastName: "Doe"
-}
-
-document.getElementById("demo").innerHTML = person.fullName.apply(person1, ["Oslo", "Norway"]); 
+document.getElementById("demo").innerHTML = myObject.fullName();
 </script>
 
 </body>
