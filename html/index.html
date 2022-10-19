@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API data in Table</title>
+    <style>
+        table,
+        th {
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>API - Air Quality Programmatic APIs</h1>
+    <table id="aqi"></table>
+
+    <script>
+        // api url
+        const api_url =
+            "https://aqicn.org/json-api/doc/#api-Search";
+
+        // Defining async function
+        async function getapi(url) {
+
+            // Storing response
+            const response = await fetch(url);
+
+            // Storing data in form of JSON
+            var data = await response.json();
+            console.log(data);
+            if (response) {
+                hideloader();
+            }
+            show(data);
+        }
+        // Calling that async function
+        getapi(api_url);
+
+        // Function to hide the loader
+        function hideloader() {
+            document.getElementById('loading').style.display = 'none';
+        }
+        // Function to define innerHTML for HTML table
+        function show(data) {
+            let tab =
+                `<tr>
+		<th>uid</th>
+		<th>aqi</th>
+		<th>time</th>
+		<th>city</th>
+		</tr>`;
+
+            // Loop to access all rows
+            for (let r of data.list) {
+                tab += `<tr>
+	<td>${r.uid} </td>
+	<td>${r.aqi}</td>
+	<td>${r.time}</td>
+	<td>${r.city}</td>		
+</tr>`;
+            }
+            // Setting innerHTML as tab variable
+            document.getElementById("aqi").innerHTML = tab;
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
