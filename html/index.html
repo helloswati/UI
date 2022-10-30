@@ -1,77 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API data in Table</title>
-    <style>
-        table,
-        th {
-            border: 1px solid black;
-        }
-    </style>
-
+    <title>Document</title>
+    <link rel="stylesheet" href="/home/swati/Documents/resume/style.css">
 </head>
-
 <body>
-    <h1>API - Air Quality Programmatic APIs</h1>
-    <table id="aqi"></table>
+    <h1>Swati Gupta</h1>
+    <li>Email: <span class="tab-1">swatigupta7@outlook.in</span></li>
+    <li>Blog: <span class="tab-1"><a href="https://helloswati.github.io/" target="_blank">https://helloswati.github.io/.io</a></span></li>
+    <li>Github: <span class="tab-1"><a href="https://www.github.com/helloswati" target="_blank">github.com/helloswati</a></span></li>
+    <li>LinkedIn: <span class="tab-1"><a href="https://www.linkedin.com/in/iamswatigupta" target="_blank">linkedin.com/in/iamswatigupta</a></span></li>
+    <h2>Work Experience:</h2>
+    <ul>
 
-    <script>
-        // api url
-        const api_url =
-            "https://aqicn.org/json-api/doc/#api-Search";
+        <li><h3>Student Coursera</h3></li>
+        <h5>Jan 2022 - Present</h5>
+        <p>
+        I have been pursuing Coursera courses in the field of Data Science for the past 6 months and have completed a few certifications in Data Science from IBM and John Hopkins University.
+        Few algorithms I have worked with are Clustering, K-means Clustering, Decision Tree, Logistic Regression etc.
+        </p>
+        
+        <li><h3>Coordinator, Andromeda Private Limited, Mumbai</h3></li>
+        <h5>April 2021 - December 2021</h5>
+        <p>I was involved in KYC Documentation and ID Verification of my clients
+        </p>
+        
+        <li><h3>Supervisor, KDM Packaging Industry, Mumabai</h3></li>
+        <h5>January 2021 - April 2021</h5>
+        <p>
+            </p><ul>
+                <li>Managing the import and export of goods</li>
+            <li>Tracking the quality of the finished packaging</li>
+          </ul>
+        <p></p>
+        </ul>
 
-        // Defining async function
-        async function getapi(url) {
+        <h2>Software Skills:</h2>
+            <li>Programming language: <span class="tab-2"> Python, R, JavaScript</span></li>
+            <li>Cloud Computing: <span class="tab-2"> IBM Cloud, Heroku</span></li>
+            <li>SQL Databases: <span class="tab-2">  MySQL</span></li>
+            <li>Version Control: <span class="tab-2">  Git </span></li>
+            <li>Libraries Used: <span class="tab-2"> pandas, numpy, matplotlib, scikit-learn, PIL.ggplot2</span></li>
+            <li>Frameworks: <span class="tab-2">  Flask </span></li>
+            <li>Web Development:<span class="tab-2">HTML, CSS</span></li>
+            <li>Web Scraping: <span class="tab-2">Beautiful soup, Requests</span></li>
+            <li>Others: <span class="tab-2"> Ubuntu 20.04, REST API, Jupyter Notebook, R Studio, Watson Studio, R Shiny, Shiny Web App, Git, Flask
+            </span></li></ul>
+            <h2>
+                Projects Summary:
+            </h2>
+            <ul>
+                <li><h3>Titanic - Machine Learning from Disaster</h3></li>
+                <p> 
+                <a href="https://github.com/helloswati/kaggle_projects.git" target="_blank">Predicting the survival of the passengers on the Titanic ship using the scikit-learn, pandas, and matplotlib libraries</a>
+                </p>
+            
+            
+                <li><h3>The Widget Factory Datasets</h3></li>
+                <p> 
+                <a href="https://github.com/helloswati/kaggle_projects/tree/main/tds_project" target="_blank">Creation of fake data with Python and creating profiles with the data and analysis of the data using the libraries pandas, NumPy, Matplotlib, Random</a>
+                </p>
+            
+            
+              <li><h3>Calculator - Built a calculator using REST API</h3></li>
+                <p>
+                    <a href="https://swatigupta.herokuapp.com/">I've developed a basic calculator app which used REST API to perform basic Addition, Multiplication, Division and Subraction and hosted the app over Heroku.</a>
+                </p>
+            
+                <li><h3>Blogging App</h3></li>
+                <p> 
+                <a href="https://helloswati.herokuapp.com/" target="_blank">Built a blogging web application and deployed it on Heroku</a>
+                </p>
+            
+                <li><h3>House Prices - Advanced Regression Technique</h3></li>
+                <p> 
+                <a href="https://github.com/helloswati/kaggle_projects/tree/main/House_Prices" target="_blank">Predict sales prices and practice feature engineering, RFs, and gradient boosting</a>
+                </p>
+             
+                <li><h3>Spaceship Titanic - Predict which passengers are transported to an alternate dimension</h3></li>
+                <p> 
+                <a href="https://github.com/helloswati/kaggle_projects/tree/main/Spaceship_Titanic" target="_blank">Predict which passengers were transported by the anomaly using records recovered from the spaceship’s damaged computer system.</a>
+                </p>
 
-            // Storing response
-            const response = await fetch(url);
-
-            // Storing data in form of JSON
-            var data = await response.json();
-            console.log(data);
-            if (response) {
-                hideloader();
-            }
-            show(data);
-        }
-        // Calling that async function
-        getapi(api_url);
-
-        // Function to hide the loader
-        function hideloader() {
-            document.getElementById('loading').style.display = 'none';
-        }
-        // Function to define innerHTML for HTML table
-        function show(data) {
-            let tab =
-                `<tr>
-		<th>uid</th>
-		<th>aqi</th>
-		<th>time</th>
-		<th>city</th>
-		</tr>`;
-
-            // Loop to access all rows
-            for (let r of data.list) {
-                tab += `<tr>
-	<td>${r.uid} </td>
-	<td>${r.aqi}</td>
-	<td>${r.time}</td>
-	<td>${r.city}</td>		
-</tr>`;
-            }
-            // Setting innerHTML as tab variable
-            document.getElementById("aqi").innerHTML = tab;
-        }
-
-    </script>
-
-
-
+                <li><h3>Contact Us Form - Built a Contact Form web application and deployed it on Github</h3></li>
+                <p> 
+                <a href="https://helloswati.github.io/ContactUs_form" target="_blank">Data will be saved on Google Sheets.</a>
+                </p>
+            
+            
+            <hr class="bigHr">
+            
+            <h3>
+            Certifications:
+            </h3>
+            
+            <ul>
+                <p>
+                    </p><li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/PD7GKPG9VZ7R" target="_blank">Data Science: Foundations using R</a></li>
+                <p></p>
+                <p>
+            </p></ul>
+            
+            <ul>
+                <p>
+                    </p><li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/XBZY65W3LRSY" target="_blank">IBM Data Science Specialization</a></li>
+                <p></p>
+                <p>
+            </p></ul>
+            
+            <h3>Academics</h3>
+            <ul>
+            <li>B Com - Ramniranjan Jhunjhunwala College, Mumbai(JUNE 2018- MAY 2021)</li>
+            <li>HSC - Sandesh Vidyalaya College, Mumbai (June 2018)</li>
+            <li>SSC - Guru Nanak English High School, Mumbai (June 2016)</li>
+            </ul>
+            
+            
+            
+            
+            
+            
+            </ul>
+            
 </body>
-
 </html>
