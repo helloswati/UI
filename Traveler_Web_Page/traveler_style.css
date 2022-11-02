@@ -84,6 +84,7 @@ user agent stylesheet
 body {
     display: block;
     margin: 8px;
+    font-size: 20px;
 }
 :root {
     --bs-blue: #0d6efd;
@@ -150,4 +151,12 @@ Show All Properties (16 more)
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+h2{
+  font-size: 20px;
+}
+
+.fh5co-text h2{
+  font-size: 20px;
 }
