@@ -1,14 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo JS</title>
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="layout.css">
+    <script type="text/javascript">var djConfig = { parseOnLoad: true }</script>
+    <script type="text/javascript" src="../dojo-release-1.3.0/dojo/dojo.js"></script>
+    </script>
+    <script type="text/javascript">
+        dojo.require("dojo.io.script");
+        function getPlace() {
+            var zip = dojo.byId('zipcode').value;
+            console.log('zip is ', zip);
+            //use country code to get results for a specific country
+            //var gn_url = 'http://ws.geonames.org/postalCodeLookupJSON?postalcode=' + zip + '&country=US';
+            var gn_url = 'http://ws.geonames.org/postalCodeLookupJSON?postalcode=' + zip;
+            console.log(gn_url);
+            dojo.io.script.get({
+                url: gn_url,
+                callbackParamName: "callback",
+                load: function (response, io) {
+                    console.log('got json.');
+                    console.dir(response);
+                    places = response.postalcodes;
+                    var infos = []
+                    dojo.forEach(places, function (p, i) {
+                        infos[i] = p.placeName + ', ' + p.adminName1 + ', Lat: ' + p.lat + '; Long: ' + p.lng + '<br />';
+                    });
+                    dojo.byId('postalCode').innerHTML = infos.join('');
+                },
+                error: errorCb
+            });
+        }
+
+        function errorCb(type, data, evt) {
+            debug(data);
+        }
+    </script>
 </head>
-<body>
-    <h1>Demo JS</h1>
-    <button>Hello World!</button>
+
+<body class="tundra">
+    Enter a zip code: <input id="zipcode" type="text" /> <button onclick="getPlace(); return false;"
+        value="Find Place.">Find Place.</button>
+    <div>Places:</div>
+    <div id="postalCode"></div>
 </body>
+
 </html>
