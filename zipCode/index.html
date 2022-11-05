@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Here a loader is created which
+        loads till response comes -->
+    <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status" id="loading">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <h1>Result</h1>
+    <h3>Pincode Details</h3>
+    <!-- table for showing data -->
+    <table id="employees"></table>
+    <script>
+        const api_url = "https://api.postalpincode.in/pincode/560102";
+
+        async function getapi(url) {
+            // Storing response
+            const response = await fetch(url);
+            // Storing data in form of JSON
+            var responseJson = await response.json();
+            console.log(responseJson);
+            if (response) {
+                hideloader();
+            }
+            show(responseJson);
+        }
+
+        getapi(api_url);
+
+        function hideloader() {
+            document.getElementById('loading').style.display = 'none';
+        }
+
+        function show(responseJson) {
+            let table =
+                `<tr>
+                    <th>Name</th>
+                    <th>State</th>
+                    <th>Country</th>
+                    <th>BranchType</th>
+                    <th>DeliveryStatus</th>
+                    <th>Circle</th>
+                    <th>District</th>
+                    <th>Division</th>
+                    <th>Region</th>
+                    <th>Block</th>
+                    <th>Country</th>
+
+                    
+                </tr>`;
+
+
+                for (let r of responseJson[0].PostOffice ) {
+                    table += `<tr>
+                    <td>${r.Name} </td>
+                    <td>${r.State}</td>
+                    <td>${r.Country}</td>
+                    <td>${r.BranchType}</td>
+                    <td>${r.DeliveryStatus}</td>
+                    <td>${r.Circle} </td>
+                    <td>${r.District} </td>
+                    <td>${r.Division} </td>
+                    <td>${r.Region} </td>
+                    <td>${r.Block} </td>
+                    <td>${r.Country} </td>
+                    </tr>`;
+                }
+
+
+            document.getElementById("employees").innerHTML = table;
+        }
+
+
+    </script>
+
+
+<style> 
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border: 1px dotted black;
+        font-size: 15px;
+    }
+    tr:hover {
+      background-color:#f5f5f5;
+    }
+    </style>
+    
+    <style>
+    body {
+      margin:20px;
+      height:700px;
+      padding-right: 200px;
+      padding-top: 20px;
+      
+      
+    }
+    
+    .icon-bar {
+      position: fixed;
+      top: 30%;
+      right: 10px;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    
+    .icon-bar a {
+      display: block;
+      text-align: center;
+      padding: 16px;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 20px;
+    }
+    
+    .icon-bar a:hover {
+        background-color: #000;
+    }
+    
+    h1{
+        text-align: center;
+    }
+
+    h3{
+        text-align: center;
+    }
+
+    </style>
+</body>
+
+</html>
