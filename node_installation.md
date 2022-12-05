@@ -274,3 +274,46 @@ shweta@kitto:~/Documents/react.js$ history
    31  nvm list
    32  history
 shweta@kitto:~/Documents/react.js$ 
+  
+================================================================  
+ npm
+    2  npx create-react-app hello-world
+    3  node -v
+    4  sudo apt install nodejs
+    5  npm -v
+    6  sudo apt install npm
+    7  node --version
+    8  npm -v
+    9  sudo apt install npm
+   10  nvm -v
+   11  sudo apt remove nodejs
+   12  node -v
+   13  sudo apt install curl 
+   14  curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
+   15  source ~/.bashrc   
+   16  nvm -v
+   17  nvm
+   18  nvm install node 
+   19  npm -v
+   20  npm
+   21  nvm install 14
+   22  npm -v
+   23  nvm install 18
+   24  npm -v
+   25  nvm install 16
+   26  npm -v
+   27  nvm list
+   28  nvm use 18
+   29  nvm list
+   30  nvm use 14
+   31  nvm list
+   32  history
+   33  npx -v
+   34  npx create-react-app my_app
+   35  cd my_app
+   36  npm start
+   37  npm xmas
+   38  npm visnup
+   39  npm start
+   40  history
+shweta@kitto:~/Documents/react.js/my_app$ 
