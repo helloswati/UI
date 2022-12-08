@@ -1,0 +1,159 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+.countrycode{
+    color: rgb(51, 51, 51);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Mier demi";
+    margin: 0px;
+    padding: 8px 0px 7px;
+}
+
+.input [type="tel"]{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
+    color: black;
+}
+
+.input > input{
+border-top: none;
+border-right: none;
+border-left: none;
+border-image: initial;
+background-color: transparent;
+outline: none;
+padding: 8px 0px 7px;
+transition: all 0.2s ease 0s;
+z-index: 1;
+color: rgb(153, 153, 153);
+border-bottom: 1px solid rgb(223, 223, 223);
+}
+
+h1{
+    text-align: center;
+    font-size:20px;
+    padding-top: 10px;
+}
+
+h2{
+    font-size: 15px;
+}
+
+h3{
+    font-size: 15px;
+    color: rgb(194, 167, 47);
+    font-weight: 0px;
+}
+
+body{
+    -webkit-font-smoothing: antialiased;
+}
+
+.container{
+    padding-left: 15px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.input-container{
+    align-items: center;
+    border-bottom: 2px solid #0b74fa;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 6px 10px;
+    width: 340px;
+    cursor: pointer;
+    border:  solid rgb(211, 206, 206);
+    border-radius: 8px;
+    border-width: 1px;
+
+}
+
+#check{
+    width: 20px;
+}
+
+.otp{
+    align-items: center;
+    text-align: center;
+    padding-right: 150px;
+    padding-top: 20px;
+    color: darkgreen;
+
+}
+
+.otp-verification{
+    text-align: center;
+    align-items: center;
+    padding-right: 150px;
+    padding-top: 25px;
+
+}
+
+h4{
+    padding-right: 50px;
+}
+
+h5{
+    padding-right: 30px;
+}
+
+#mic{
+    width:30px;
+}
+
+
+#mic1{
+    cursor: pointer;
+    width: 30px;
+}
+
+.otp-container{
+    align-items: center;
+    border-bottom: 2px solid #0b74fa;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 6px 10px;
+    width: 340px;
+    cursor: pointer;
+}
+
+
+.otp-code{
+    text-align: center;
+    padding-top: 20px;
+}
+
+::-webkit-input-placeholder{
+    font-size: 15px;
+}
+
+button{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.edit{
+    color:blue;
+    font-weight:bold;
+}
+
+.main{
+    border:  solid rgb(211, 206, 206);
+    border-radius: 8px;
+    border-width: 1px;
+    width: 500px;
+    margin: 0 auto;
+
+}
