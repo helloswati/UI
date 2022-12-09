@@ -41,7 +41,8 @@ border-bottom: 1px solid rgb(223, 223, 223);
 h1{
     text-align: center;
     font-size:20px;
-    padding-top: 10px;
+    padding-top: 15px;
+    line-height: 1.2;
 }
 
 h2{
@@ -59,23 +60,23 @@ body{
 }
 
 .container{
-    padding-left: 15px;
     padding-top: 20px;
-    text-align: center;
+    margin: 0 auto;
 }
 
 .input-container{
-    align-items: center;
     border-bottom: 2px solid #0b74fa;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: row;
     padding: 6px 10px;
     width: 340px;
     cursor: pointer;
     border:  solid rgb(211, 206, 206);
     border-radius: 8px;
     border-width: 1px;
+    align-items: baseline;
 
 }
 
@@ -84,8 +85,6 @@ body{
 }
 
 .otp{
-    align-items: center;
-    text-align: center;
     padding-right: 150px;
     padding-top: 20px;
     color: darkgreen;
@@ -93,7 +92,6 @@ body{
 }
 
 .otp-verification{
-    text-align: center;
     align-items: center;
     padding-right: 150px;
     padding-top: 25px;
@@ -119,7 +117,6 @@ h5{
 }
 
 .otp-container{
-    align-items: center;
     border-bottom: 2px solid #0b74fa;
     display: flex;
     justify-content: space-between;
@@ -127,12 +124,13 @@ h5{
     padding: 6px 10px;
     width: 340px;
     cursor: pointer;
+    margin: 0 auto;
 }
 
 
 .otp-code{
-    text-align: center;
     padding-top: 20px;
+    margin: 0 auto;
 }
 
 ::-webkit-input-placeholder{
@@ -150,10 +148,10 @@ button{
 }
 
 .main{
-    border:  solid rgb(211, 206, 206);
     border-radius: 8px;
     border-width: 1px;
     width: 500px;
     margin: 0 auto;
+    line-height: 1.7;
 
 }
