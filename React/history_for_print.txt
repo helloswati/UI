@@ -1,0 +1,22 @@
+Steps to make changes in prod
+ 
+    1  ssh -i myprivatekey root@192.46.215.80                           --> login to server
+    2  cd /usr/share/nginx/birbal (ls birbal.zip is backup file)        --> open birbal prod files 
+    3  scp -i myprivatekey birbal.zip root@192.46.215.80:/tmp           --> Upload new built file to tmp folder
+    4  ssh -i myprivatekey root@192.46.215.80                           --> re-login
+    5  cd /tmp ls                                                       --> Confirm upload 
+    6  cd /usr/share/nginx/birbal                                       --> go to birbal
+    7  mv /tmp/birbal.zip .                                             --> move birbal.zip from tmp to current dir
+    8  unzip birbal.zip                                                 --> unzip
+    9  rm birbal.zip                                                    --> remove birbal.zip from birbal
+    10 zip birbal.zip                                                   --> create a zip backup(in /usr/share/nginx/) if no prob arises 
+
+
+
+Steps to create birbal.zip
+
+    1 npm run build
+    2 C:\Users\ASUS\Documents\GitHub\context-bot\dist\context-bot
+    3 ctrl+a 
+    4 send to compresses zip folder
+    5 move the folder to ssh folder
