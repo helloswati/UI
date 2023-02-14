@@ -1,0 +1,176 @@
+480  sudo scp -i myprivatekey hero-bot\ 29-12.zip root@172.105.49.9:/tmp
+  481  sudo ssh -i myprivatekey root@172.105.49.9
+  482  ipconfig
+  483  sudo ipconfig
+  484  ip addr
+  485  ip a
+  486  nvm use 16.14.1
+  487  npm i
+  488  npm start
+  489  cd Documents/GitHub/
+  490  git init
+  491  git remote add origin git@github.com:helloswati/beam-engine.git
+  492  git status
+  493  git add beam-jvm-master.zip 
+  494  git add core-master.zip 
+  495  git add express-engine-main.zip 
+  496  git add Spec-master.zip 
+  497  git commit -m"initial commit"
+  498  git push
+  499  git push origin master 
+  500  nvm use 16.14.1
+  501  npm i
+  502  npm start
+  503  ip addr
+  504  history
+  505  nvm use 16.14.1
+  506  npm i
+  507  npm start
+  508  npm i
+  509  npm start
+  510  npm i
+  511  nvm use 16.14.1
+  512  npm i
+  513  npm start
+  514  nvm use 16.14.1
+  515  npm i
+  516  npm start
+  517  npm i
+  518  npm start
+  519  npm i
+  520  npm start
+  521  nvm use 16.14.1
+  522  npm i
+  523  npm start
+  524  nvm use 16.14.1
+  525  npm i
+  526  npm start
+  527  npm run build 
+  528  nvm use 16.14.1
+  529  npm run build 
+  530  sudo scp -i myprivatekey dashboard\ 1-5-2023.zip root@192.46.215.80:/tmp
+  531  sudo ssh -i myprivatekey root@192.46.215.80
+  532  ls
+  533  sudo scp -i myprivatekey dashboard_1-5-2023.zip root@192.46.215.80:/tmp
+  534  sudo ssh -i myprivatekey root@192.46.215.80
+  535  sudo scp -i awsProd dashboard_5-1-2023.zip root@65.0.204.81:/tmp
+  536  sudo ssh -i awsProd root@65.0.204.81
+  537  sudo scp -i awsProd lic_dashboard_5-1-2023.zip root@13.232.167.35:/tmp
+  538  sudo ssh -i awsProd root@13.232.167.35:
+  539  sudo ssh -i awsProd root@13.232.167.35
+  540  sudo scp -i awsProd lic_dashboard.zip root@13.232.167.35:/tmp
+  541  sudo ssh -i awsProd root@13.232.167.35
+  542  sudo scp -i awsProd lic_dashboard.zip root@13.232.167.35:/tmp
+  543  sudo ssh -i awsProd root@13.232.167.35
+  544  sudo scp -i awsProd lic_dashboard.zip root@13.232.167.35:/tmp
+  545  sudo scp -i awsProd lic_dashboard_5-1-2023.zip root@13.232.167.35:/tmp
+  546  sudo ssh -i awsProd root@13.232.167.35
+  547  sudo scp -i myprivatekey safety_sheild.zip root@172.105.49.9:/tmp
+  548  sudo ssh -i myprivatekey root@172.105.49.9
+  549  sudo scp -i awsProd grse_5-1-2023.zip root@13.232.170.210:/tmp
+  550  sudo ssh -i awsProd root@13.232.170.210
+  551  nvm use 16.14.1
+  552  npm i
+  553  npm start
+  554  history
+  555  sudo scp -i testkeyaws digisaathibot.zip root@3.111.29.21:/tmp
+  556  sudo ssh -i testkeyaws root@3.111.29.21
+  557  history
+  558  sudo scp -i awsProd digisaathibot.zip root@65.0.204.81:/tmp
+  559  sudo scp -i awsProd digisaathiBot.zip root@65.0.204.81:/tmp
+  560  sudo ssh -i awsProd root@65.0.204.81
+  561  history
+  562  sudo scp -i testkeyaws digibot.zip  root@3.111.29.21:/tmp
+  563  sudo ssh -i testkeyaws root@3.111.29.21
+  564  nvm use 16.14.1
+  565  npm i
+  566  npm start
+  567  npm i
+  568  npm start
+  569  npm run build
+  570  npm run build 
+  571  npm start
+  572  npm run build
+  573  nvm use 16.14.1
+  574  npm i
+  575  npm start
+  576  npm run build
+  577  npm start
+  578  npm run build
+  579  sudo scp -i testkeyaws digiWeb-11-1-2023.zip  root@3.111.29.21:/tmp
+  580  history
+  581  sudo ssh -i testkeyaws root@3.111.29.21
+  582  sudo scp -i testkeyaws digiWeb-11-1-2023.zip  root@3.111.29.21:/tmp
+  583  sudo ssh -i testkeyaws root@3.111.29.21
+  584  npm start
+  585  nvm use 16.14.1
+  586  npm i
+  587  npm start
+  588  npm run build
+  589  sudo scp -i testkeyaws digiBot.zip   root@3.111.29.21:/tmp
+  590  sudo ssh -i testkeyaws root@3.111.29.21
+  591  uptime
+  592  uptime zlt
+  593  history
+  594  free -
+  595  free ig
+  596  free -g
+  597  sudo scp -i testkeyaws digi.zip    root@3.111.29.21:/tmp
+  598  sudo ssh -i testkeyaws root@3.111.29.21
+  599  sudo scp -i testkeyaws digiIcon.zip    root@3.111.29.21:/tmp
+  600  sudo ssh -i testkeyaws root@3.111.29.21
+  601  history
+  602  sudo scp -i awsProd digi.zip    root@65.0.204.81:/tmp
+  603  sudo scp -i awsProd digiIcon.zip  root@65.0.204.81:/tmp
+  604  sudo ssh -i digiIcon.zip root@65.0.204.81
+  605  history
+  606  sudo ssh -i digiIcon.zip root@65.0.204.81
+  607  sudo ssh -i awsProd root@65.0.204.81
+  608  cat /etc/resolve.conf
+  609  cat/etc/resolve.conf
+  610  cat /etc/resolv.conf 
+  611  sudo scp -i awsProd digiIcon.zip  root@65.0.204.81:/tmp
+  612  sudo ssh -i awsProd root@65.0.204.81
+  613  sudo apt-get install fonts-indic
+  614  nvm use 16.14.1
+  615  npm i
+  616  npm start
+  617  nvm use 16.14.1
+  618  npm i
+  619  npm start
+  620  nvm use 16.14.1
+  621  npm i
+  622  npm start
+  623  npm i
+  624  npm start
+  625  npm i
+  626  npm start
+  627  npm i
+  628  npm start
+  629  npm install moment
+  630  npm i
+  631  npm i
+  632  nvm use 16.14.1
+  633  npm i
+  634  npm i moment@2.24.0
+  635  npm i 
+  636  npm start
+  637  npm i 
+  638  nvm use 16.14.1
+  639  npm i 
+  640  npm start
+  641  node -v
+  642  npm i
+  643  npm start
+  644  nvm use 16.14.1
+  645  npm i
+  646  npm start
+  647  sudo snap install slack
+  648  nvm use 16.14.1
+  649  npm i
+  650  npm start
+  651  npm i
+  652  npm start
+  653  npm i
+  654  npm start
+  655  history
