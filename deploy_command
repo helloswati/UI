@@ -174,3 +174,318 @@
   653  npm i
   654  npm start
   655  history
+================================================================================================================================================
+
+shweta@sparrow:~$ history
+    1  sudo apt update
+    2  lsb_release -a
+    3  sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.1.1-linux1/GitHubDesktop-linux-3.1.1-linux1.deb
+    4  sudo gdebi GitHubDesktop-linux-3.1.1-linux1.deb
+    5  sudo apt install  GitHubDesktop-linux-3.1.1-linux1.deb
+    6  sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.1.1-linux1/GitHubDesktop-linux-3.1.1-linux1.deb
+    7  sudo gdebi GitHubDesktop-linux-3.1.1-linux1.deb
+    8  sudo apt-get install gdebi-core 
+    9  sudo gdebi GitHubDesktop-linux-3.1.1-linux1.deb
+   10  wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+   11  echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+   12  sudo apt update && sudo apt install sublime-text
+   13  uptime
+   14  cd ~
+   15  sudo apt update
+   16  sudo apt install nodejs
+   17  node -v
+   18  cd ~
+   19  curl -sL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh
+   20  sudo apt  install curl
+   21  cd ~
+   22  curl -sL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh
+   23  sudo bash /tmp/nodesource_setup.sh
+   24  sudo apt install nodejs
+   25  node -v
+   26  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+   27  source ~/.bashrc
+   28  nvm list-remote
+   29  nvm install v16.14.1
+   30  nvm use 16.14.1
+   31  cd Documents/
+   32  cd GitHub/
+   33  cd context-bot/
+   34  nvm use 16.14.1
+   35  npm i
+   36  sudo apt update
+   37  npm start
+   38  cd ~
+   39  npm install -g @angular/cli
+   40  cd Documents/
+   41  cd GitHub/
+   42  cd context-bot/
+   43  npm start
+   44  nvm use 16.14.1
+   45  npm start
+   46  npm i
+   47  npm start
+   48  nvm use 16.14.1
+   49  npm start
+   50  sudo scp -i testkeyaws digiWeb-21-2-23.zip  root@3.111.29.21:/tmp
+   51  sudo ssh -i testkeyaws root@3.111.29.21
+   52  sudo scp -i testkeyaws digi-21-2-23.zip     root@3.111.29.21:/tmp
+   53  npm i
+   54  npm run build
+   55  npm start
+   56  npm i
+   57  npm run build
+   58  npm start
+   59  npm i
+   60  npm run build
+   61  npm start
+   62  npm i
+   63  npm start
+   64  npm i
+   65  npm start
+   66  sudo scp -i testkeyaws digiWeb-28-2-23.zip     root@3.111.29.21:/tmp
+   67  sudo scp -i testkeyaws digiWeb-28-2-2023.zip root@3.111.29.21:/tmp
+   68  sudo ssh -i testkeyaws root@3.111.29.21
+   69  npm i
+   70  npm start
+   71  npm i
+   72  npm run build
+   73  sudo scp -i testkeyaws digiwe
+   74  sudo scp -i testkeyaws digiweb-28-2-23.zip root@3.111.29.21:/tmp
+   75  sudo ssh -i testkeyaws root@3.111.29.21
+   76  npm start
+   77  npm run build
+   78  npm i
+   79  npm start
+   80  npm i
+   81  npm start
+   82  npm i
+   83  npm start
+   84  npm i
+   85  npm start
+   86  npm i
+   87  npm start
+   88  npm i
+   89  npm start
+   90  npm i
+   91  npm start
+   92  npm 
+   93  npm start
+   94  npm i
+   95  npm start
+   96  nvm use 16.14.1
+   97  npm start
+   98  npm i
+   99  nvm use 16.14.1
+  100  npm i
+  101  npm start
+  102  npm i
+  103  npm start
+  104  npm i
+  105  npm start
+  106  npm i
+  107  npm start
+  108  node -v
+  109  sudo scp -i awsProd dashboard-1-3-23.zip root@13.232.10.131:/tmp
+  110  sudo ssh -i awsProd root@13.232.10.131
+  111  sudo scp -i awsProd Dashboard.zip  root@13.232.10.131:/tmp
+  112  sudo ssh -i awsProd root@13.232.10.131
+  113  sudo scp -i awsProd dashboard-1-3-2023.zip root@13.232.10.131:/tmp
+  114  sudo ssh -i awsProd root@13.232.10.131
+  115  sudo scp -i awsProd Dashboard.zip root@13.232.10.131:/tmp
+  116  sudo ssh -i awsProd root@13.232.10.131
+  117  npm i
+  118  npm start
+  119  npm i
+  120  npm start
+  121  npm i
+  122  npm start
+  123  npm i
+  124  npm start
+  125  npm i
+  126  npm start
+  127  npm i
+  128  npm install
+  129  sudo npm install -g npm 
+  130  npm install
+  131  npm start
+  132  sudo npm cache clean 
+  133  sudo npm cache clean --force
+  134  npm start
+  135  cd /home/shweta/Downloads/dashboard/package.json 
+  136  cd package.json
+  137  sudo chmod -R 777 /home/shweta/Downloads/dashboard
+  138  rm -rf /home/shweta/Downloads/dashboard/node_modules
+  139  rm /home/shweta/Downloads/dashboard/package-lock.json
+  140  npm install
+  141  npm cache clean --force
+  142  npm install
+  143  npm run build
+  144  nvm list
+  145  nvm use 14.21.3
+  146  nvm install 14.21.3
+  147  nvm use 14.21.3
+  148  npm i
+  149  npm start
+  150  npm --version
+  151  npm install express
+  152  npm init -y
+  153  npm i
+  154  npm start
+  155  npm install express-http-proxy --save
+  156  cd ~
+  157  echo %SYSTEMROOT%
+  158  cd Downloads/dashboard/
+  159  echo %SYSTEMROOT%
+  160  ls -ltr
+  161  npm i
+  162  npm start
+  163  npm run build
+  164  npm start
+  165  npm run build
+  166  npm start
+  167  npm run build
+  168  npm start
+  169  sudo scp -i testkeyaws digiWeb-2-3-23.zip      root@3.111.29.21:/tmp
+  170  sudo ssh -i testkeyaws root@3.111.29.21
+  171  history
+  172  npm run build
+  173  sudo scp -i awsProd digiWeb-2-3-23.zip   root@65.0.204.81:/tmp
+  174  npm start
+  175  npm i
+  176  npm start
+  177  npm i
+  178  npm run build
+  179  npm start
+  180  npm i
+  181  npm start
+  182  sudo scp -i testkeyaws licdev.zip root@3.111.29.21:/tmp
+  183  sudo ssh -i testkeyaws root@3.111.29.21:
+  184  sudo ssh -i testkeyaws root@3.111.29.21
+  185  npm run build
+  186  uptime
+  187  top
+  188  uptime
+  189  npm start
+  190  sudo snap install slack --classic
+  191  npm i
+  192  npm start
+  193  npm start
+  194  npm i
+  195  npm start
+  196  npm i
+  197  npm run build
+  198  sudo scp -i testkeyaws Digi-6-3-23.zip        root@3.111.29.21:/tmp
+  199  sudo ssh -i testkeyaws root@3.111.29.21
+  200  sudo scp -i testkeyaws digi-bot-6-3-23.zip        root@3.111.29.21:/tmp
+  201  sudo ssh -i testkeyaws root@3.111.29.21
+  202  history
+  203  sudo scp -i testkeyaws digi-6-3-23.zip       root@3.111.29.21:/tmp
+  204  sudo ssh -i testkeyaws root@3.111.29.21
+  205  sudo scp -i awsProd widget.zip root@13.127.151.59:/tmp
+  206  sudo ssh -i awsProd root@13.127.151.59
+  207  sudo scp -i awsProd cb-bot-6-3-23.zip root@13.127.151.59:/tmp
+  208  sudo ssh -i awsProd root@13.127.151.59
+  209  npm start
+  210  npm i
+  211  npm start
+  212  npm run build
+  213  npm start
+  214  npm i
+  215  npm start
+  216  npm i
+  217  npm start
+  218  npm i
+  219  npm run build
+  220  sudo scp -i awsProd digiWeb-2-3-23.zip   root@65.0.204.81:/tmp
+  221  sudo ssh -i awsProd root@65.0.204.81:/tmp
+  222  sudo scp -i testkeyaws digi-6-3-23.zip       root@3.111.29.21:/tmp
+  223  history
+  224  npm i
+  225  npm start
+  226  npm i
+  227  npm start
+  228  npm run build
+  229  npm start
+  230  npm i
+  231  npm start
+  232  npm i
+  233  npm start
+  234  npm start\
+  235  npm start
+  236  npm i
+  237  npm start
+  238  sudo scp -i awsProd widget.zip root@13.127.151.59:/tmp
+  239  sudo ssh root@13.127.151.59
+  240  sudo ssh -i root@13.127.151.59
+  241  sudo ssh -i awsProd root@13.127.151.59
+  242  sudo scp -i awsProd widget.zip root@13.127.151.59:/tmp
+  243  sudo ssh -i awsProd root@13.127.151.59
+  244  sudo scp -i awsProd widget.zip root@13.127.151.59:/tmp
+  245  sudo ssh -i awsProd root@13.127.151.59
+  246  npm start
+  247  npm i
+  248  npm start
+  249  sudo ssh -i awsProd  root@13.127.151.59
+  250  lxc list
+  251  sudo lxc list
+  252  npm i
+  253  npm start
+  254  node -v
+  255  npm i
+  256  npm run build
+  257  npm start
+  258  sudo scp -i awsProd widget.zip root@13.127.151.59:/tmp
+  259  sudo ssh -i awsProd root@13.127.151.59
+  260  sudo scp -i awsProd aura.zip  root@13.127.151.59:/tmp
+  261  sudo ssh -i awsProd  root@13.127.151.59
+  262  npm run build
+  263  npm start
+  264  sudo scp -i testkeyaws digi-13-3-23.zip root@3.111.29.21:/tmp
+  265  sudo ssh -i testkeyaws  root@3.111.29.21:
+  266  sudo ssh -i testkeyaws  root@3.111.29.21
+  267  sudo scp -i testkeyaws ls-13-3-23.zip root@65.2.80.30:/tmp
+  268  sudo ssh -i testkeyaws root@65.2.80.30
+  269  npm start
+  270  cd Documents/
+  271  ls
+  272  cd GitHub/
+  273  git clone git@github.com:helloswati/helloswati.github.io.git
+  274  sudo apt install git
+  275  git clone git@github.com:helloswati/helloswati.github.io.git
+  276  git clone https://github.com/helloswati/helloswati.github.io.git
+  277  npm start
+  278  npm i
+  279  npm start
+  280  npm run build
+  281  npm i
+  282  npm start
+  283  npm i
+  284  npm start
+  285  sudo scp -i testkeyaws digiWeb-15-3-23.zip  root@3.111.29.21:/tmp
+  286  sudo ssh -i testkeyaws root@3.111.29.21
+  287  npm i
+  288  npm start
+  289  npm i
+  290  npm run  build 
+  291  npm start
+  292  npm i
+  293  npm start
+  294  npm i
+  295  npm run  build 
+  296  history
+  297  sudo scp -i testkeyaws digi-13-3-23.zip root@3.111.29.21:/tmp
+  298  sudo scp -i testkeyaws Digiweb-15-3-23.zip  root@3.111.29.21:/tmp
+  299  sudo scp -i testkeyaws digi-13-3-23.zip root@3.111.29.21:/tmp
+  300  sudo ssh -i testkeyaws  root@3.111.29.21
+  301  sudo scp -i testkeyaws Digiweb-15-3-23.zip  root@3.111.29.21:/tmp
+  302  sudo ssh -i testkeyaws  root@3.111.29.21
+  303  npm start
+  304  xfloat
+  305  xinput
+  306  xfloat 12
+  307  xinput float 12
+  308  sudo scp -i awsProd DigiWeb-17-3-23.zip root@65.2.168.235:/tmp
+  309  sudo ssh -i awsProd root@65.2.168.235
+  310  sudo scp -i awsProd digi-17-3-23.zip  root@65.2.168.235:/tmp
+  311  sudo ssh -i awsProd root@65.2.168.235
+  312  history
