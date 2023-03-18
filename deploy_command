@@ -489,3 +489,28 @@ shweta@sparrow:~$ history
   310  sudo scp -i awsProd digi-17-3-23.zip  root@65.2.168.235:/tmp
   311  sudo ssh -i awsProd root@65.2.168.235
   312  history
+================================================================
+shweta@sparrow:~$ lsblk -o MODEL,SERIAL,SIZE,STATE --nodeps
+MODEL          SERIAL           SIZE STATE
+                               63.3M 
+                               55.6M 
+                               63.3M 
+                               55.6M 
+                               72.9M 
+                               72.9M 
+                                219M 
+                               91.7M 
+                              460.3M 
+                              115.9M 
+                               49.9M 
+                                  4K 
+                                219M 
+                              241.4M 
+                                 46M 
+                              346.3M 
+                              142.4M 
+                                2.5M 
+                               65.1M 
+                              452.4M 
+                                1.5M 
+256GB NVME EVM EN2SI112200981 238.5G live
