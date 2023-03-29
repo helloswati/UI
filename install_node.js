@@ -183,3 +183,7 @@ If the version you would like to remove is the current active version, you first
 
  - nvm deactivate
 Now you can uninstall the current version using the uninstall command used previously. This removes all files associated with the targeted version of Node.js
+
+if wanted to check which node has been installed in sysytem 
+  - nvm ls
+
