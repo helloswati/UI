@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="mx">
+      <div class="ls">
+        <div class="sh">
+          <h3>Upload Statements</h3>
+          <p>Account 1</p>
+        </div>
+        <div>
+          <select name="Bank" id="bank">
+            <option>Select Bank</option>
+            <option>HDFC</option>
+            <option>SBI</option>
+            <option>Axis</option>
+          </select>
+        </div>
+        <div class="sg">
+          <label for="statement">Statements range from:</label>
+          <input type="date" id="statement" name="statement" />
+          <label for="statement">Statements range to:</label>
+          <input type="date" id="statement" name="statement" />
+        </div>
+        <div class="sk">
+            <p>Password protection</p>
+          <select name="Bank" id="bank">
+            <option>No</option>
+            <option>Yes</option>
+          </select>
+        </div>
+
+        <div class="item-wrapper one">
+          <div class="item">
+            <form
+              data-validation="true"
+              action="#"
+              method="post"
+              enctype="multipart/form-data"
+            >
+              <div class="item-inner">
+                <div class="item-content">
+                  <div class="image-upload">
+                    <label style="cursor: pointer; text-align: center;" for="file_upload">
+                      <img src="" alt="" class="uploaded-image" />
+
+                      <div class="h-100">
+                        <div class="dplay-tbl">
+                          <div class="dplay-tbl-cell">
+                            <!-- <i class="fa-solid fa-cloud-arrow-up" style="color: #bcc4d2;"></i> -->
+                            <i class="fa fa-cloud-upload fa-4x" style="color: #bcc4d2"; ></i>
+                            <h5><span style="color: rgb(106, 138, 179)">Upload</span> or Drag and Drop your files here</h5>
+                            <!-- <h6 class="mt-10 mb-70">Or Drop Your Image Here</h6> -->
+                          </div>
+                        </div>
+                      </div>
+                      <!--upload-content-->
+                      <input
+                        style="text-align: center;"
+                        data-required="image"
+                        type="file"
+                        name="image_name"
+                        id="file_upload"
+                        class="image-input"
+                        data-traget-resolution="image_resolution"
+                        value=""
+                      />
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <p>Acceptable format PDF</p>
+        <div class="nx">Add more Accounts +</div>
+        <div class="Btn">
+          <button type="button" class="btn" style="border-color: red;background: transparent;line-height: 40px;padding-left: 30px;
+          padding-right: 30px;color: red;">Cancel</button>
+          <button type="button" class="btn" style="border-color: cornflowerblue; background: rgb(34, 70, 136);line-height: 40px ;margin-left: 50px;padding-left: 30px;
+          padding-right: 30px;color: white;">Confrim</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <style>
+    .mx {
+      margin-left: 250px;
+      margin-right: 100px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      border: 1px solid rgba(0,0,0,.125);
+      border-radius: 1.25rem;
+      width: 50%;
+      align-items: center;
+    }
+    .ls{
+     margin-left: 130px;
+     margin-bottom: 20px;
+    }   
+    * {
+    box-sizing: border-box;
+    }
+    .image-upload{
+        border-style: dotted;
+    }
+    .sg{
+      line-height: 60px;
+      display: grid;
+      column-gap: 0px;
+      width: 175px;
+    }
+    .sk{
+        height: 110px;
+    }
+    #bank{
+     width: 141px;
+     padding-top: 5px;
+     padding-bottom: 5px;
+     border-radius: 5px;
+     text-align: center;
+     background-color: transparent;
+    }
+    .nx{
+      border: 1px solid rgba(0,0,0,.125);
+      border-radius: 1.25rem;
+      line-height: 70px;
+      text-align: center;
+      color: cornflowerblue;
+      border-color: cornflowerblue;
+      width: 40%;
+    }
+    .Btn{
+        line-height: 100px;
+        padding-left: 400px;
+    }
+    .image-input{
+        text-align: center;
+        margin-left: 245px;
+        margin-bottom: 30px;
+    }
+    h3{
+      color: rgb(47, 44, 44);
+      font: status-bar;
+    }
+    .sh{
+      font-size: 25px ;
+    }
+  </style>
+</html>
